@@ -1,0 +1,26 @@
+/* 880 px */
+@media only screen and (max-width: 55em) {
+  html {
+    font-size: 54.5%;
+  }
+
+  .amount-number,
+  .total-number {
+    font-size: 4rem;
+  }
+}
+
+/* 768px */
+@media only screen and (max-width: 48em) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* 480px */
+@media only screen and (max-width: 30em) {
+  .container {
+    width: 95%;
+    padding: 2rem;
+  }
+}
