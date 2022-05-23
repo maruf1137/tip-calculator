@@ -23,7 +23,12 @@ resetBtn.addEventListener("click", handleReset);
 
 window.addEventListener("load", handlePeople);
 
-function handleBill() {
+function handleBill(prev, cur) {
+  if (bill.value === "0" || bill.value === "") {
+    bill.value = 0;
+  }
+  console.log(billValue, bill.value.length);
+
   billValue = parseFloat(bill.value);
   calcTip();
 }
